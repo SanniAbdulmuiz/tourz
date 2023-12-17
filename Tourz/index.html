@@ -19,6 +19,11 @@
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/queries.css">
 
+  <script defer src="https://unpkg.com/
+     smoothscroll-polyfill@0.4.4/dist/
+     smoothscroll.min.js">
+    </script>
+  <script defer src="Js/script.js"></script>
   <title>Tourz &mdash; Easy Travels</title>
 </head>
 
@@ -31,17 +36,22 @@
     </a>
     <nav class="main-nav">
       <ul class="main-nav-list">
-        <li><a class="main-nav-link home" href="#"> Home</a></li>
-        <li><a class="main-nav-link" href="#"> Destinations</a></li>
-        <li><a class="main-nav-link" href="#"> Bookings</a></li>
-        <li><a class="main-nav-link" href="#"> videos</a></li>
-        <li><a class="main-nav-link nav-cta" href="#"> sign in</a></li>
+        <li><a class="main-nav-link home" href="#home"> Home</a></li>
+        <li><a class="main-nav-link" href="#destination"> Destinations</a></li>
+        <li><a class="main-nav-link" href="#booking">Booking</a></li>
+        <li><a class="main-nav-link" href="#videos"> videos</a></li>
+        <li><a class="main-nav-link nav-cta" href="#sign-in"> sign in</a></li>
       </ul>
     </nav>
+
+    <button class="btn-mobile-nav">
+      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
   </header>
 
   <main>
-    <section class="section-hero">
+    <section class="section-hero" id="home">
       <div class="hero">
         <div class="hero-text-box">
           <h1 class="heading-primary">
@@ -58,18 +68,18 @@
       </div>
     </section>
 
-    <section class="section-destination">
+    <section class="section-destination" id="sign-in">
       <div class="destination">
         <div class="destination-img-box">
           <div class="destination-img-container">
             <div class="desiination-box">
               <div class="destination-margin">
-                <img src="./img/destination/Rectangle 2.2.png" alt="destination images">
+                <img class="prob" src="./img/destination/Rectangle 2.2.png" alt="destination images">
               </div>
             </div>
             <div class="ratings">
               <div class="desiination-box">
-                <img src="./img/destination/Rectangle 2.1.png" alt="destination images">
+                <img class="prob" src="./img/destination/Rectangle 2.1.png" alt="destination images">
                 <div class="ratings-img">
                   <div>
                     <img src="./img/Star.png" alt="Ratings">
@@ -84,7 +94,7 @@
             </div>
             <div class="desiination-box">
               <div class="destination-margin">
-                <img src="./img/destination/Rectangle 2.png" alt="destination images">
+                <img class="prob" src="./img/destination/Rectangle 2.png" alt="destination images">
               </div>
             </div>
           </div>
@@ -94,14 +104,15 @@
           </div>
         </div>
         <div class="destination-text-box">
-          <h2 class="destination-header">Amazing places to enjoy <span class="destination-span">your</span> travel</h2>
+          <h2 class="destination-header">Amazing places to enjoy <span class="destination-span">your</span> travel
+          </h2>
           <p class="subheading">Plan and book your awesome trip such as airlines, car rentals,
             cruise lines, hotels, rail ways, travel insurance and package tours with us.</p>
           <a href="#" class="btn hero-btn">Explore</a>
         </div>
       </div>
     </section>
-    <section class="section-featured">
+    <section class="section-featured" id="videos">
       <div class="container">
         <div class="featured-header center">
           <h2 class="featured-head">Featured Videos</h2>
@@ -147,7 +158,7 @@
         </div>
       </div>
     </section>
-    <section class="section-bookings">
+    <section class="section-bookings" id="destination">
       <div class="featured-header center">
         <h2 class="featured-head">Travel Categories</h2>
         <span class="featured-span">yourself</span>
@@ -212,13 +223,56 @@
         </div>
       </div>
     </section>
-    <section class="section-trip">
-      <div class="trip">
+    <section class="section-trip" id="booking">
+      <div class="trip container">
         <p class="trip-p">come experience the world with us</p>
         <div class="trip-div">Enjoy 40% off on First Trip</div>
+        <div class="buttons-img-ctn">
+          <a class="buttons-img">
+            <p class="buttons-test">Destination</p>
+            <img class="img-group" src="./img/trip/Group.png" alt="buttons-img">
+          </a>
+          <a class="buttons-img">
+            <p class="buttons-test">Packages</p>
+            <img class="img-group" src="./img/trip/Group.png" alt="buttons-img">
+          </a>
+          <a class="buttons-img">
+            <p class="buttons-test">Dates</p>
+            <img class="img-group" src="./img/trip/Calender.png" alt="buttons-img">
+          </a>
+          <a class="book">Book Now</a>
+        </div>
       </div>
     </section>
   </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-nav">
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link home" href="#home"> Home</a></li>
+            <li><a class="main-nav-link" href="#destination"> Destinations</a></li>
+            <li><a class="main-nav-link" href="#booking"> Bookings</a></li>
+            <li><a class="main-nav-link" href="#videos"> videos</a></li>
+            <li><a class="main-nav-link nav-cta" href="#sign-in"> sign in</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-copyright">
+        <div class="copyright-text">
+          <p class="copyright">
+            Copyright &copy; <span class="year">1997 - 2019</span>
+          </p>
+          <p class="tourz">Tourz - Travel Around the World</p>
+        </div>
+        <div class="copyright-imges">
+          <img src="./img/facebook-official.png" alt="Facebook Image">
+          <img src="./img/Vector (1).png" alt="Twitter Image">
+          <img src="./img/instagram.png" alt="Instagram Image">
+        </div>
+      </div>
+    </div>
+  </footer>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

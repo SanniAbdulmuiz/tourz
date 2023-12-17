@@ -72,6 +72,43 @@
   font-weight: 600;
 }
 
+/* Mobile */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* Sticky Navigation */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 9999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+
 /* **************** */
 /* Section-hero */
 /* **************** */
@@ -308,7 +345,7 @@
 /* **************** */
 .section-trip {
   padding: 8.6rem 0;
-  background-image: url("../img/Booking.png");
+  background-image: url("../img/trip/Rectangle.png");
   background-size: cover;
   background-position: center;
 }
@@ -321,7 +358,7 @@
 }
 
 .trip-p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #fff;
   letter-spacing: 0.75px;
   line-height: 1.2;
@@ -330,8 +367,82 @@
 }
 
 .trip-div {
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   color: #fff;
   letter-spacing: 0.75px;
   line-height: 1.2;
+  margin-bottom: 6rem;
+}
+
+.buttons-img-ctn {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.buttons-img {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  padding: 1.5rem 1rem;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.buttons-test {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.img-group {
+  height: 2rem;
+}
+
+.book {
+  border: none;
+  padding: 2rem 2.5rem;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #6c63ff;
+  cursor: pointer;
+}
+
+/* **************** */
+/* Section-footer*/
+/* **************** */
+.footer {
+  padding: 4rem 0;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-copyright {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright-text {
+  display: flex;
+  gap: 1rem;
+}
+
+.copyright {
+  color: #000;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.tourz {
+  color: #9b9b9b;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.6;
 }

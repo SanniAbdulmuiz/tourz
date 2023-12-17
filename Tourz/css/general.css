@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -13,6 +14,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #333;
+  overflow-x: hidden;
 }
 
 /* **************** */
@@ -35,39 +37,14 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.grid--3-cols {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid--4-cols {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.grid--5-cols {
-  grid-template-columns: repeat(5, 1fr);
-}
-
 .heading-primary {
   font-size: 5.2rem;
   line-height: 1.05;
   margin-bottom: 3.2rem;
 }
 
-.heading-secondary {
-  font-size: 4.4rem;
-  line-height: 1.2;
-  margin-bottom: 4.5rem;
-}
 
-.heading-tertiary {
-  font-size: 3rem;
-  line-height: 1.2;
-  margin-bottom: 3.2rem;
-}
-
-.heading-primary,
-.heading-secondary,
-.heading-tertiary {
+.heading-primary {
   font-weight: 700;
   color: #333;
   letter-spacing: -0.5px;
