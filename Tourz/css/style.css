@@ -1,9 +1,6 @@
 /* **************** */
 /* Header */
 /* **************** */
-.main-nav {
-  border: 10px solid red;
-}
 
 .header {
   display: flex;
